@@ -1,4 +1,4 @@
-# Диаграммы активностей
+# Диаграммы последовательностей
 ---
 
 # Содержание
@@ -9,14 +9,14 @@
 <a name="add"/>
 
 # 1 Добавить контакт
-![Добавить контакт](../../../Images/System%20design/add.png)
+![Добавить контакт](../../../Images/System%20design/add(sq).png)
 
 <a name="edit"/>
 
 # 2 Редактировать контакт
-![Редактировать контакт](../../../Images/System%20design/edit.png)
+![Редактировать контакт](../../../Images/System%20design/edit(sq).png)
 
 <a name="delete"/>
 
 # 3 Удалить контакт
-![Удалить контакт](../../../Images/System%20design/delete.png)
+![Удалить контакт](../../../Images/System%20design/delete(sq).png)
