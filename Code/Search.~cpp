@@ -1,0 +1,116 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Search.h"
+#include "Call.h"
+#include "DM.h"
+#include "Phonebook.h"
+#include "Add.h"
+#include "Editor.h"
+#include "Report.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TfSearch *fSearch;
+//---------------------------------------------------------------------------
+__fastcall TfSearch::TfSearch(TComponent* Owner)
+        : TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall My_choose::Choose(AnsiString Parameter){
+        fDM->ADOQuery1->Close();
+        fDM->ADOQuery1->SQL->Clear();
+        if (fMain->ComboBox2->ItemIndex){
+          if(fMain->RadioButton1->Checked){
+            fDM->ADOQuery1->SQL->Text="SELECT * FROM Телефонный_справочник WHERE "+Parameter+" LIKE '%"+fMain->Edit1->Text+"%'"+"ORDER BY Фамилия";
+          }else{
+            fDM->ADOQuery1->SQL->Text="SELECT * FROM Телефонный_справочник WHERE "+Parameter+" LIKE '%"+fMain->Edit1->Text+"%'"+"ORDER BY Фамилия DESC";
+          }
+        }
+        else {
+          if(fMain->RadioButton1->Checked){
+            fDM->ADOQuery1->SQL->Text="SELECT * FROM Телефонный_справочник WHERE "+Parameter+" LIKE '"+fMain->Edit1->Text+"%'"+"ORDER BY Фамилия";
+          }else{
+            fDM->ADOQuery1->SQL->Text="SELECT * FROM Телефонный_справочник WHERE "+Parameter+" LIKE '"+fMain->Edit1->Text+"%'"+"ORDER BY Фамилия DESC";
+          }
+        }
+        fDM->ADOQuery1->Open();
+        fMain->Label17->Caption=fMain->DBGrid1->DataSource->DataSet->RecordCount;
+}
+//---------------------------------------------------------------------------
+void __fastcall My_search::Switch(){
+switch(fMain->ComboBox1->ItemIndex){
+        case 0:{
+          Choose("Фамилия");
+        break;
+        }
+
+        case 1:{
+          Choose("Имя");
+        break;
+        }
+
+        case 2:{
+          Choose("Отчество");
+        break;
+        }
+
+        case 3:{
+          Choose("Мобильный_телефон");
+        break;
+        }
+
+        case 4:{
+          Choose("Город");
+        break;
+        }
+
+        case 5:{
+          Choose("Улица");
+        break;
+        }
+
+        case 6:{
+          Choose("Дом");
+        break;
+        }
+
+        case 7:{
+          Choose("Корпус");
+        break;
+        }
+
+        case 8:{
+          Choose("Квартира");
+        break;
+        }
+
+        case 9:{
+          Choose("Домашний_телефон");
+        break;
+        }
+
+        case 10:{
+          Choose("Организация");
+        break;
+        }
+
+        case 11:{
+          Choose("Должность");
+        break;
+        }
+
+        case 12:{
+          Choose("Рабочий_телефон");
+        break;
+        }
+
+        default:{
+          throw My_search_exception("Ошибка!\nНеверный параметр поиска!\nПараметр поиска: ",fMain->ComboBox1->ItemIndex);
+        //break;
+        }
+}
+}
