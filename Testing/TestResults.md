@@ -91,7 +91,7 @@
 <a name="14"/>
 
 Рисунок 14.</br>
-![Рисунок 14](../Images/Testing/Search-by-field.PNG)
+![Рисунок 14](../Images/Testing/Search-by-field.png)
 
 <a name="15"/>
 
@@ -106,7 +106,7 @@
 <a name="17"/>
 
 Рисунок 17.</br>
-![Рисунок 17](../Images/Testing/Math-with-.PNG)
+![Рисунок 17](../Images/Testing/Math-with-.png)
 
 <a name="18"/>
 
