@@ -1,7 +1,7 @@
 object fMain: TfMain
-  Left = 178
+  Left = 179
   Top = 116
-  Width = 1096
+  Width = 1095
   Height = 610
   Caption = #1058#1077#1083#1077#1092#1086#1085#1085#1099#1081' '#1089#1087#1088#1072#1074#1086#1095#1085#1080#1082'. '#1053#1072#1081#1076#1105#1090#1089#1103' '#1074#1089#1105'!'
   Color = clBtnFace
@@ -14,7 +14,7 @@ object fMain: TfMain
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
-    Left = 678
+    Left = 677
     Top = 0
     Width = 402
     Height = 571
@@ -449,7 +449,7 @@ object fMain: TfMain
   object Panel2: TPanel
     Left = 0
     Top = 0
-    Width = 678
+    Width = 677
     Height = 571
     Align = alClient
     TabOrder = 1
@@ -476,7 +476,7 @@ object fMain: TfMain
     object DBGrid1: TDBGrid
       Left = 1
       Top = 146
-      Width = 676
+      Width = 675
       Height = 424
       Align = alBottom
       DataSource = fDM.DataSource1
@@ -568,7 +568,7 @@ object fMain: TfMain
     object Panel3: TPanel
       Left = 1
       Top = 113
-      Width = 676
+      Width = 675
       Height = 33
       Align = alBottom
       TabOrder = 1
@@ -695,7 +695,7 @@ object fMain: TfMain
     object Panel4: TPanel
       Left = 1
       Top = 33
-      Width = 676
+      Width = 675
       Height = 80
       Align = alBottom
       TabOrder = 2
@@ -738,6 +738,7 @@ object fMain: TfMain
         ParentFont = False
         TabOrder = 0
         OnChange = Edit1Change
+        OnKeyPress = Edit1KeyPress
       end
       object BitBtn1: TBitBtn
         Left = 600

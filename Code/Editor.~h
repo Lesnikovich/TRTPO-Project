@@ -48,6 +48,19 @@ __published:	// IDE-managed Components
         void __fastcall Button1Click(TObject *Sender);
         void __fastcall Button2Click(TObject *Sender);
         void __fastcall Button3Click(TObject *Sender);
+        void __fastcall DBEdit1KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit2KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit3KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit4KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit5KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit6KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit7KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit8KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit9KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit10KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit11KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit12KeyPress(TObject *Sender, char &Key);
+        void __fastcall DBEdit13KeyPress(TObject *Sender, char &Key);
 private:	// User declarations
 public:		// User declarations
         __fastcall TfEditor(TComponent* Owner);

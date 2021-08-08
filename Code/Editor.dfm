@@ -1,6 +1,6 @@
 object fEditor: TfEditor
-  Left = 453
-  Top = 101
+  Left = 183
+  Top = 119
   Width = 709
   Height = 531
   Caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1085#1080#1077' '#1082#1086#1085#1090#1072#1082#1090#1072
@@ -63,6 +63,7 @@ object fEditor: TfEditor
       DataField = #1060#1072#1084#1080#1083#1080#1103
       DataSource = fDM.DataSource1
       TabOrder = 0
+      OnKeyPress = DBEdit1KeyPress
     end
     object DBEdit2: TDBEdit
       Left = 104
@@ -72,6 +73,7 @@ object fEditor: TfEditor
       DataField = #1048#1084#1103
       DataSource = fDM.DataSource1
       TabOrder = 1
+      OnKeyPress = DBEdit2KeyPress
     end
     object DBEdit3: TDBEdit
       Left = 432
@@ -81,6 +83,7 @@ object fEditor: TfEditor
       DataField = #1054#1090#1095#1077#1089#1090#1074#1086
       DataSource = fDM.DataSource1
       TabOrder = 2
+      OnKeyPress = DBEdit3KeyPress
     end
     object DBEdit4: TDBEdit
       Left = 432
@@ -90,6 +93,7 @@ object fEditor: TfEditor
       DataField = #1052#1086#1073#1080#1083#1100#1085#1099#1081'_'#1090#1077#1083#1077#1092#1086#1085
       DataSource = fDM.DataSource1
       TabOrder = 3
+      OnKeyPress = DBEdit4KeyPress
     end
   end
   object GroupBox2: TGroupBox
@@ -156,6 +160,7 @@ object fEditor: TfEditor
       DataField = #1043#1086#1088#1086#1076
       DataSource = fDM.DataSource1
       TabOrder = 0
+      OnKeyPress = DBEdit5KeyPress
     end
     object DBEdit6: TDBEdit
       Left = 104
@@ -165,6 +170,7 @@ object fEditor: TfEditor
       DataField = #1059#1083#1080#1094#1072
       DataSource = fDM.DataSource1
       TabOrder = 1
+      OnKeyPress = DBEdit6KeyPress
     end
     object DBEdit7: TDBEdit
       Left = 104
@@ -174,6 +180,7 @@ object fEditor: TfEditor
       DataField = #1044#1086#1084
       DataSource = fDM.DataSource1
       TabOrder = 2
+      OnKeyPress = DBEdit7KeyPress
     end
     object DBEdit8: TDBEdit
       Left = 432
@@ -183,6 +190,7 @@ object fEditor: TfEditor
       DataField = #1050#1086#1088#1087#1091#1089
       DataSource = fDM.DataSource1
       TabOrder = 3
+      OnKeyPress = DBEdit8KeyPress
     end
     object DBEdit9: TDBEdit
       Left = 432
@@ -192,6 +200,7 @@ object fEditor: TfEditor
       DataField = #1050#1074#1072#1088#1090#1080#1088#1072
       DataSource = fDM.DataSource1
       TabOrder = 4
+      OnKeyPress = DBEdit9KeyPress
     end
     object DBEdit10: TDBEdit
       Left = 432
@@ -201,6 +210,7 @@ object fEditor: TfEditor
       DataField = #1044#1086#1084#1072#1096#1085#1080#1081'_'#1090#1077#1083#1077#1092#1086#1085
       DataSource = fDM.DataSource1
       TabOrder = 5
+      OnKeyPress = DBEdit10KeyPress
     end
   end
   object GroupBox3: TGroupBox
@@ -246,6 +256,7 @@ object fEditor: TfEditor
       DataField = #1054#1088#1075#1072#1085#1080#1079#1072#1094#1080#1103
       DataSource = fDM.DataSource1
       TabOrder = 0
+      OnKeyPress = DBEdit11KeyPress
     end
     object DBEdit12: TDBEdit
       Left = 136
@@ -255,6 +266,7 @@ object fEditor: TfEditor
       DataField = #1044#1086#1083#1078#1085#1086#1089#1090#1100
       DataSource = fDM.DataSource1
       TabOrder = 1
+      OnKeyPress = DBEdit12KeyPress
     end
     object DBEdit13: TDBEdit
       Left = 136
@@ -264,6 +276,7 @@ object fEditor: TfEditor
       DataField = #1056#1072#1073#1086#1095#1080#1081'_'#1090#1077#1083#1077#1092#1086#1085
       DataSource = fDM.DataSource1
       TabOrder = 2
+      OnKeyPress = DBEdit13KeyPress
     end
   end
   object Button1: TButton

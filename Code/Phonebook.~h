@@ -104,6 +104,7 @@ __published:	// IDE-managed Components
         void __fastcall ComboBox1Change(TObject *Sender);
         void __fastcall ComboBox2Change(TObject *Sender);
         void __fastcall SpeedButton4Click(TObject *Sender);
+        void __fastcall Edit1KeyPress(TObject *Sender, char &Key);
 private:	// User declarations
 public:		// User declarations
         __fastcall TfMain(TComponent* Owner);
